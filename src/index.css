@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Varela+Round&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-brand-bg text-brand-text font-rounded;
+        background-image:
+            linear-gradient(rgba(26, 26, 29, 0.9), rgba(26, 26, 29, 0.9)),
+            linear-gradient(to right, rgba(56, 189, 248, 0.1) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(56, 189, 248, 0.1) 1px, transparent 1px);
+        background-size: 100% 100%, 40px 40px, 40px 40px;
+    }
+}
+
+.tech-border {
+    @apply border border-brand-accent/30 backdrop-blur-sm;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
+}
+
+.tech-glow {
+    text-shadow: 0 0 10px rgba(56, 189, 248, 0.5);
+}
+
+.amber-glow {
+    text-shadow: 0 0 10px rgba(255, 183, 3, 0.5);
+}
