@@ -28,7 +28,7 @@ export default function SlotMachine({ items, target, onFinished, duration = 2000
             {/* Glowing border effect */}
             <div className="absolute -inset-1 bg-gradient-to-r from-brand-accent to-brand-primary rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
 
-            <div className="relative text-5xl font-bold text-center p-10 bg-black/80 rounded-2xl border border-brand-accent/50 shadow-[0_0_30px_rgba(56,189,248,0.2)] min-w-[350px] backdrop-blur-xl">
+            <div className="relative text-5xl font-bold text-center p-10 bg-black/80 rounded-2xl border border-brand-accent/50 shadow-[0_0_30px_rgba(56,189,248,0.2)] min-w-[350px] min-h-[160px] backdrop-blur-xl flex items-center justify-center">
                 {/* Corner accents */}
                 <div className="absolute top-0 left-0 w-4 h-4 border-l-2 border-t-2 border-brand-accent"></div>
                 <div className="absolute top-0 right-0 w-4 h-4 border-r-2 border-t-2 border-brand-accent"></div>

@@ -27,3 +27,27 @@
 .amber-glow {
     text-shadow: 0 0 10px rgba(255, 183, 3, 0.5);
 }
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+}
+
+.animate-float {
+    animation: float linear infinite;
+}
