@@ -70,7 +70,7 @@ export default function ParticipantView() {
         <div className="min-h-screen flex flex-col items-center justify-center p-6 relative">
             <div className="w-full max-w-md relative z-10">
                 <header className="mb-10 text-center">
-                    <h1 className="text-4xl font-bold mb-2 text-brand-primary amber-glow tracking-wider">破冰行動</h1>
+                    <h1 className="text-4xl font-bold mb-2 text-brand-primary amber-glow tracking-wider">思維共振</h1>
                     <div className="h-1 w-24 bg-brand-accent mx-auto rounded-full shadow-[0_0_10px_#38BDF8]"></div>
                     <p className="mt-4 text-brand-accent font-mono text-sm tracking-widest">SYSTEM INITIALIZATION...</p>
                 </header>
@@ -92,8 +92,11 @@ export default function ParticipantView() {
                         <textarea
                             value={question}
                             onChange={(e) => setQuestion(e.target.value)}
-                            className="w-full px-4 py-3 bg-black/50 border border-gray-700 rounded-lg focus:ring-2 focus:ring-brand-accent focus:border-transparent text-white placeholder-gray-600 transition-all h-32 resize-none font-mono"
-                            placeholder="你想問大家的一個問題..."
+                            className="w-full px-4 py-3 bg-black/50 border border-gray-700 rounded-lg focus:ring-2 focus:ring-brand-accent focus:border-transparent text-white placeholder-gray-600 transition-all h-48 resize-none font-mono text-sm leading-relaxed"
+                            placeholder={`請填寫一個問題，例如：
+• 推薦型：「你今年最愛的一個電影or漫畫，為什麼推薦？」
+• 腦洞型：「如果你能跟某個名人對談，你會選誰？為什麼？」
+• 價值觀型：「如果可以擁有一項超能力，你希望是什麼？」`}
                             required
                         />
                     </div>

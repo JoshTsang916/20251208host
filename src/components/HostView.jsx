@@ -120,7 +120,7 @@ export default function HostView() {
                     <div className="flex items-center gap-4">
                         <div className="w-3 h-12 bg-brand-primary shadow-[0_0_15px_#FFB703]"></div>
                         <h1 className="text-4xl font-bold text-brand-primary amber-glow tracking-widest">
-                            讀書會破冰行動
+                            思維共振 <span className="text-xl text-brand-accent/80 font-mono align-middle ml-2">MIND RESONANCE</span>
                         </h1>
                     </div>
                     <div className="flex items-center gap-4 bg-black/40 px-6 py-2 rounded-full border border-brand-accent/30">
