@@ -38,7 +38,7 @@ export default function HostView() {
         const hostData = {
             id: 'host',
             name: '主持人',
-            question: '大家今天最期待分享的一本書是什麼？' // Default Host Question
+            question: '如果你的餘生只能看一本書，你會選哪一本？為什麼？' // Updated Host Question
         };
 
         setCurrentQSource(hostData);
@@ -82,7 +82,7 @@ export default function HostView() {
             setGameState('show_next_q_transition');
             setTimeout(() => {
                 setGameState('show_q_wait_for_draw');
-            }, 2000);
+            }, 3000); // Increased duration slightly to let people read
         }
     };
 
@@ -205,8 +205,16 @@ export default function HostView() {
                 )}
 
                 {gameState === 'show_next_q_transition' && (
-                    <div className="flex flex-col items-center justify-center h-[60vh]">
-                        <h2 className="text-5xl font-bold text-brand-accent animate-pulse font-mono">系統更新中...</h2>
+                    <div className="flex flex-col items-center justify-center h-[60vh] text-center">
+                        <div className="text-2xl text-brand-accent font-mono mb-8 tracking-widest">INCOMING TRANSMISSION...</div>
+                        <div className="p-8 border border-brand-accent/30 bg-brand-accent/5 rounded-2xl backdrop-blur-sm max-w-3xl w-full">
+                            <div className="text-sm text-gray-400 mb-2 font-mono">下一位提問者</div>
+                            <div className="text-5xl font-bold text-white mb-6 amber-glow">{currentQSource?.name}</div>
+                            <div className="h-px w-full bg-brand-accent/20 mb-6"></div>
+                            <div className="text-2xl text-brand-accent/80 font-mono animate-pulse">
+                                正在載入提問數據...
+                            </div>
+                        </div>
                     </div>
                 )}
 
